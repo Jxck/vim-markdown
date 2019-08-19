@@ -116,6 +116,18 @@ syn match  mkdRule         /^\s*\*\s\{0,1}\*\s\{0,1}\*\(\*\|\s\)*$/
 syn match  mkdRule         /^\s*-\s\{0,1}-\s\{0,1}-\(-\|\s\)*$/
 syn match  mkdRule         /^\s*_\s\{0,1}_\s\{0,1}_\(_\|\s\)*$/
 
+" Jxck own Rule
+"" check for first
+syn match mkdRule /^しかし/
+syn match mkdRule /^ただし/
+syn match mkdRule /^例えば/
+syn match mkdRule /^つまり/
+syn match mkdRule /^また/
+"" check for last
+syn match mkdRule /だろう/
+syn match mkdRule /思う/
+
+
 " YAML frontmatter
 if get(g:, 'vim_markdown_frontmatter', 0)
   syn include @yamlTop syntax/yaml.vim
