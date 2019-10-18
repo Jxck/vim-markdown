@@ -124,8 +124,10 @@ syn match mkdRule /^例えば/
 syn match mkdRule /^つまり/
 syn match mkdRule /^また/
 "" check for last
-syn match mkdRule /だろう/
-syn match mkdRule /思う/
+syn match mkdRule /だろう。/
+syn match mkdRule /思う。/
+syn match mkdRule /多い。/
+syn match mkdRule /無い。/
 
 
 " YAML frontmatter
