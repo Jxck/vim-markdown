@@ -128,6 +128,7 @@ syn match mkdRule /だろう。/
 syn match mkdRule /思う。/
 syn match mkdRule /多い。/
 syn match mkdRule /無い。/
+syn match mkdRule / | /
 
 
 " YAML frontmatter
